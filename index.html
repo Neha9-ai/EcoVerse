@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVerse AI | Intelligent Climate Action Platform</title>
+    <meta
+      name="description"
+      content="EcoVerse AI helps people understand their carbon footprint, discover climate-friendly actions, and monitor environmental health."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="orb"></div>
+    <header class="hero">
+      <nav class="nav container">
+        <a href="#" class="logo">EcoVerse AI</a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#calculator">Calculator</a>
+          <a href="#community">Community</a>
+        </div>
+      </nav>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">AI for a Greener Tomorrow</p>
+          <h1>Turn climate action into a daily habit.</h1>
+          <p class="hero-copy">
+            EcoVerse AI combines smart guidance, footprint tracking, satellite insights,
+            and community challenges to help people reduce impact with confidence.
+          </p>
+          <div class="hero-actions">
+            <a href="#calculator" class="btn btn-primary">Try the calculator</a>
+            <a href="#features" class="btn btn-secondary">Explore features</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>+12K</strong>
+              <span>eco challenges joined</span>
+            </div>
+            <div>
+              <strong>8.3M</strong>
+              <span>kg CO₂ guided to reduce</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>user satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Live climate assistant</h3>
+          <div class="chat-window" id="assistant-messages">
+            <div class="message bot">Hello! Ask me how to lower your footprint today.</div>
+          </div>
+          <form id="assistant-form" class="chat-form">
+            <input type="text" id="assistant-input" placeholder="Ask about solar, transport, or waste" required />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Core experience</p>
+          <h2>Everything climate-conscious users need in one place.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>AI climate assistant</h3>
+            <p>Get personalized advice for transport, heating, solar, and daily choices.</p>
+          </article>
+          <article class="card">
+            <h3>Carbon footprint calculator</h3>
+            <p>Estimate annual emissions from travel, electricity, food, and shopping.</p>
+          </article>
+          <article class="card">
+            <h3>Satellite insights</h3>
+            <p>Monitor deforestation, urban heat islands, and green cover trends with maps.</p>
+          </article>
+          <article class="card">
+            <h3>Tree planting guidance</h3>
+            <p>Discover suitable species and ideal planting locations for higher impact.</p>
+          </article>
+          <article class="card">
+            <h3>Waste recognition</h3>
+            <p>Identify plastic, paper, metal, organic, and e-waste from a photo.</p>
+          </article>
+          <article class="card">
+            <h3>Gamified challenges</h3>
+            <p>Earn points and badges for actions like public transport and cleanups.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="container calculator-grid">
+          <div>
+            <p class="eyebrow">Smart impact calculator</p>
+            <h2>See your footprint in a few seconds.</h2>
+            <p>
+              Enter your everyday habits and receive a simple carbon score plus practical
+              actions you can take this month.
+            </p>
+          </div>
+
+          <form id="calc-form" class="calc-card">
+            <label>
+              Transport (monthly km)
+              <input type="number" name="transport" value="250" min="0" />
+            </label>
+            <label>
+              Electricity (monthly kWh)
+              <input type="number" name="electricity" value="350" min="0" />
+            </label>
+            <label>
+              Flights (per year)
+              <input type="number" name="flights" value="2" min="0" />
+            </label>
+            <label>
+              Food spend (monthly $)
+              <input type="number" name="food" value="160" min="0" />
+            </label>
+            <label>
+              Shopping spend (monthly $)
+              <input type="number" name="shopping" value="120" min="0" />
+            </label>
+            <button type="submit" class="btn btn-primary">Calculate impact</button>
+          </form>
+        </div>
+        <div class="container result-card" id="result-card">
+          <h3>Your annual CO₂ estimate</h3>
+          <p class="result-number" id="result-number">0 kg</p>
+          <p class="result-label" id="result-label">Balanced</p>
+          <ul id="tips-list">
+            <li>Small changes can save large amounts of emissions over time.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Why it stands out</p>
+          <h2>A blend of AI, climate data, and real-world action.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card muted-card">
+            <h3>Community-led growth</h3>
+            <p>Users share tree-planting photos, organize cleanups, and motivate each other.</p>
+          </article>
+          <article class="card muted-card">
+            <h3>Live climate dashboard</h3>
+            <p>Track planted trees, water and energy savings, and monthly progress.</p>
+          </article>
+          <article class="card muted-card">
+            <h3>Future-ready stack</h3>
+            <p>Built for Flutter, React, FastAPI, OpenAI, and cloud deployment from day one.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="community" class="section container architecture-card">
+        <div class="section-heading">
+          <p class="eyebrow">Project architecture</p>
+          <h2>Designed for a modern product experience.</h2>
+        </div>
+        <div class="architecture-flow">
+          <div>Flutter App / React Website</div>
+          <div>FastAPI Backend</div>
+          <div>OpenAI + Weather + Maps APIs</div>
+          <div>Firebase / PostgreSQL</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>EcoVerse AI © 2026</p>
+        <a href="#">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
